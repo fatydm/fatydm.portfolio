@@ -38,6 +38,7 @@ html {
     --bg-postgre: rgb(55, 70, 130);
     --bg-express-alt: rgb(84, 101, 168);
     --bg-pwa: rgb(227, 133, 227);
+    --bg-tailwind: #5d5a5f;
 }
 
 body {

@@ -147,6 +147,7 @@
 .postgre { background-color: var(--bg-postgre); }
 .express { background-color: var(--bg-express); }
 .pwa { background-color: var(--bg-pwa); }
+.tailwind { background-color : var(--bg-tailwind); }
 
 .projet-stack {
     margin-top: auto;

@@ -79,6 +79,7 @@ body.light {
     --bg-prisma: #B39DDB;
     --bg-postgre: #bad883;
     --bg-pwa: #a8440a;
+    --bg-tailwind: #e2ab05;
 }
 
 body.light .projets {
