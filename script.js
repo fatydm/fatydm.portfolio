@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 //===================================
 // ANIMATION DU TEXTE (Typing effect)
 // ==================================
@@ -5,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const texts = [
     'dev full-stack',
     'en reconversion',
-    'donc junior',
     'prête à en apprendre plus',
     'ouverte d\'esprit',
     'toujours motivée'
@@ -58,61 +59,76 @@ closeIcon.addEventListener('click', () => {
 // FORMULAIRE DE CONTACT
 // ========================
 const form = document.getElementById('contact-form');
-
-form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    const formData = new FormData(form);
-    const data = {};
-    formData.forEach((value, key) => data[key] = value);
-
-    const response = await fetch("https://formspree.io/f/xvgaadee", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data)
-    });
-
-    if (response.ok) {
-        alert("Message envoyé !");
-        form.reset();
-    } else {
-        alert("Erreur lors de l'envoi.");
+    if (form) {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const data = {};
+            formData.forEach((value, key) => data[key] = value);
+            const response = await fetch("https://formspree.io/f/xvgaadee", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data)
+            });
+            if (response.ok) {
+                alert("Message envoyé !");
+                form.reset();
+            } else {
+                alert("Erreur lors de l'envoi.");
+            }
+        });
     }
-});
 
 // ========================
 // SWITCH LIGHT/DARK
 // ========================
+// const light = document.querySelector('.lightBtn')
+// const dark = document.querySelector('.darkBtn')
+// const imgColor = document.querySelector('.photo_color')
+// const imgBlack = document.querySelector('.photo_black')
+
+// light.addEventListener('click', () => {
+//     const body = document.body
+
+//     if (body.classList.contains('dark')) {
+//         body.classList.add('light')
+//         body.classList.remove('dark')
+//         light.style.display = 'none'
+//         dark.style.display = 'flex'
+//         imgBlack.style.display = 'none'
+//         imgColor.style.display = 'flex'
+//     }
+// })
+
+// dark.addEventListener('click', () => {
+
+//     const body = document.body
+
+//     if (body.classList.contains('light')) {
+
+//         body.classList.add('dark')
+//         body.classList.remove('light')
+//         dark.style.display = 'none'
+//         light.style.display = 'flex'
+//         imgBlack.style.display = 'flex'
+//         imgColor.style.display = 'none'
+//     }
+// })
+
 const light = document.querySelector('.lightBtn')
 const dark = document.querySelector('.darkBtn')
-const imgColor = document.querySelector('.photo_color')
-const imgBlack = document.querySelector('.photo_black')
 
-light.addEventListener('click', () => {
-    const body = document.body
+console.log('light trouvé :', light)
+console.log('dark trouvé :', dark)
 
-    if (body.classList.contains('dark')) {
-        body.classList.add('light')
-        body.classList.remove('dark')
-        light.style.display = 'none'
-        dark.style.display = 'flex'
-        imgBlack.style.display = 'none'
-        imgColor.style.display = 'flex'
-    }
+light?.addEventListener('click', () => {
+    console.log('click light !')
+    document.body.classList.replace('dark', 'light')
 })
 
-dark.addEventListener('click', () => {
-    console.log('toto');
+dark?.addEventListener('click', () => {
+    console.log('click dark !')
+    document.body.classList.replace('light', 'dark')
+});
 
-    const body = document.body
-
-    if (body.classList.contains('light')) {
-
-        body.classList.add('dark')
-        body.classList.remove('light')
-        dark.style.display = 'none'
-        light.style.display = 'flex'
-        imgBlack.style.display = 'flex'
-        imgColor.style.display = 'none'
-    }
 })

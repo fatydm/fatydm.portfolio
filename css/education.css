@@ -1,9 +1,64 @@
+/* ============================================================
+   SECTION XP
+   ============================================================ */
 
+/* Section */
+.experience {
+  background-color: var(--bg-color);
+  padding: 60px 10%;
+}
+
+/* Container */
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Card */
+.experience-card {
+  background-color: var(--second-bg-color);
+  padding: 25px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Text */
+.experience-card h3 {
+  color: var(--main-color);
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.company {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.experience-card ul {
+  padding-left: 20px;
+}
+
+.experience-card li {
+  margin-bottom: 10px;
+  color: var(--text-color);
+  line-height: 1.4;
+  text-align: justify;
+}
 /* ============================================================
    SECTION PARCOURS (EDUCATION)
    ============================================================ */
 .education {
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
     overflow-x: hidden;
 }
 

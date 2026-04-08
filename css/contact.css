@@ -6,6 +6,12 @@
     background-color: var(--second-bg-color);
 }
 
+.echange{
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
 .contact form {
     display: flex;
     flex-direction: column;

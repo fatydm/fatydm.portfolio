@@ -13,11 +13,8 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/projets.css">
-    <link rel="stylesheet" href="css/education.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/responsive.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,11 +31,10 @@
         <i class="fa-solid fa-xmark" id="close" aria-label="Fermer le menu"></i>
         
         <nav class="navbar">
-            <a href="#home">Accueil</a>
             <a href="#projets">Projets</a>
-            <a href="#education">Parcours</a>
-            <a href="#contact">Contact</a>
-            <a href="CV-DW-Portfolio.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+            <a href="/parcours.html">Parcours</a>
+            <a href="/contact.html">Contact</a>
+            <!-- <a href="CV-DW-Portfolio.pdf" target="_blank" rel="noopener noreferrer">CV</a> -->
         </nav>
         
         <div class="theme-switch">
@@ -52,16 +48,19 @@
         <div class="home-top">
             <div class="home-content">
                 <h1>Salut, moi c'est <span>Faty</span></h1>
-                <div class="animation-container">
+                <!-- <div class="animation-container">
                     <h3>
                         <span class="static-text">Je suis </span>
                         <span class="dynamic-text"></span>
                     </h3>
-                </div>
+                </div> -->
                 
-                <p>
-                    En pleine reconversion professionnelle depuis janvier 2025, je suis aujourd'hui à la recherche d'une alternance en contrat de professionnalisation 
-                    d'une durée minimum de 12 mois avec un rythme de 4j/1jour.
+                <p class="home-paragraph">
+                    Après plusieurs années dans le commerce, la relation client et le recrutement, 
+                    j’ai choisi de me reconvertir dans la tech avec un objectif clair — 
+                    concevoir des outils utiles, performants et centrés sur les besoins utilisateurs. Cette expérience me permet 
+                    aujourd’hui d’aborder le développement avec une vraie compréhension 
+                    des enjeux métier et des utilisateurs finaux.
                 </p>
                 <p>
                     J'ai réalisé plusieurs projets personnels à découvrir ci-dessous.
@@ -74,8 +73,8 @@
                     <a href="https://github.com/fatydm" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <i class="fa-brands fa-square-github"></i>
                     </a>
-                    <a href="CV-DW-Portfolio.pdf" target="_blank" rel="noopener noreferrer" aria-label="CV">
-                        <i class="fa-regular fa-file"></i>
+                    <a href="mailto:fatydiarram@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="email">
+                        <i class="fa-solid fa-at"></i>
                     </a>
                 </div>
             </div>
@@ -155,6 +154,7 @@
 
         <div class="projets-container">
 
+            <!-- Projet COMPOWSER -->
             <div class="projet-box">
                 <div class="projet-img">
                     <img src="./assets/compowser.png" alt="Capture d'écran du projet Compowser">
@@ -404,81 +404,6 @@
         </div>
     </section>
 
-    <!-- SECTION PARCOURS -->
-    <section class="education" id="education">
-        <h2 class="heading">Parcours scolaire</h2>
-
-        <div class="timeline-items">
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2026</div>
-                <div class="timeline-content">
-                    <h3>ADA TECH SCHOOL</h3>
-                    <p>Licence Concepteur d'application mobile</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2020</div>
-                <div class="timeline-content">
-                    <h3>ESGCI</h3>
-                    <p>Master II en Business Development et management commercial</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2016</div>
-                <div class="timeline-content">
-                    <h3>IDRAC BUSINESS SCHOOL</h3>
-                    <p>Bachelor Responsable Marketing et développement commercial</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2015</div>
-                <div class="timeline-content">
-                    <h3>MÉDICIS ALTERNANCE</h3>
-                    <p>BTS Management des Unités commerciales</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2012</div>
-                <div class="timeline-content">
-                    <h3>LYCÉE ÉLISA LEMONNIER</h3>
-                    <p>Baccalauréat Professionnel Commerce</p>
-                </div>
-            </div>
-        </div>
-    </section> 
-
-    <!-- SECTION CONTACT -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contacte-<span>Moi</span></h2>
-        <form id="contact-form">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" placeholder="Nom & Prénom" id="fullname" name="fullname" required>
-                    <input type="email" placeholder="Email" id="email" name="email" required>
-                </div>
-                <div class="input-box">
-                    <input type="tel" placeholder="Numéro de téléphone" id="phone" name="phone">
-                    <input type="text" placeholder="Nom de l'entreprise" id="company" name="company">
-                </div>
-            </div>
-
-            <div class="input-group-2">
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
-                <input type="submit" value="Envoyer" class="btn">
-            </div>
-        </form> 
-    </section>
-
     <!-- FOOTER -->
     <footer class="footer">
         <div class="social">
@@ -488,11 +413,14 @@
             <a href="https://github.com/fatydm" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <i class="fa-brands fa-square-github"></i>
             </a>
+            <a href="mailto:fatydiarram@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="email">
+                <i class="fa-solid fa-at"></i>
+            </a>
         </div>
 
         <ul class="list">
             <li><a href="#projets">Projets</a></li>
-            <li><a href="#home">À propos de moi</a></li>
+            <li><a href="/parcours.html">Mon parcours</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         

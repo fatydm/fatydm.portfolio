@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faty Diarra - Contact</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/global.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d6b9f53705.js" crossorigin="anonymous"></script>
+</head>
+<body class="dark">
+    <header class="header">
+        <a href="#home" class="logo">FD<span>Portfolio</span></a>
+        
+        <i class="fa-solid fa-bars menu-icon" id="menu" aria-label="Ouvrir le menu"></i>
+        <i class="fa-solid fa-xmark" id="close" aria-label="Fermer le menu"></i>
+        
+        <nav class="navbar">
+            <a href="/index.html">Accueil</a>
+            <a href="/parcours.html">Parcours</a>
+            <!-- <a href="CV-DW-Portfolio.pdf" target="_blank" rel="noopener noreferrer">CV</a> -->
+        </nav>
+        
+        <div class="theme-switch">
+            <i class="fa-solid fa-sun switch lightBtn" id="lightBtn" aria-label="Activer le mode clair"></i>
+            <i class="fa-solid fa-moon switch darkBtn" id="darkBtn" aria-label="Activer le mode sombre"></i>
+        </div>
+    </header>
+
+    <!-- SECTION CONTACT -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contacte-<span>Moi</span></h2>
+        <p class="echange">Une question, une idée, une opportunité ? N'hésite pas à me contacter, je serai ravie d'échanger avec toi !</p>
+        <form id="contact-form">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Nom & Prénom" id="fullname" name="fullname" required>
+                    <input type="email" placeholder="Email" id="email" name="email" required>
+                </div>
+                <div class="input-box">
+                    <input type="tel" placeholder="Numéro de téléphone" id="phone" name="phone">
+                    <input type="text" placeholder="Nom de l'entreprise" id="company" name="company">
+                </div>
+            </div>
+
+            <div class="input-group-2">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
+                <input type="submit" value="Envoyer" class="btn">
+            </div>
+        </form> 
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
