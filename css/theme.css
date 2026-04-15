@@ -80,6 +80,13 @@ body.light {
     --bg-postgre: #bad883;
     --bg-pwa: #a8440a;
     --bg-tailwind: #e2ab05;
+    --bg-lovable: #f59e0b;
+    --bg-bolt: #fbbf24;
+    --bg-v0: #f97316;
+    --bg-cursor: rgb(200, 200, 67);
+    --bg-codex: orange;
+    --bg-supabase: rgb(144, 101, 21);
+    --bg-whimsical: brown;
 }
 
 body.light .projets {

@@ -39,6 +39,13 @@ html {
     --bg-express-alt: rgb(84, 101, 168);
     --bg-pwa: rgb(227, 133, 227);
     --bg-tailwind: #5d5a5f;
+    --bg-lovable: #a78bfa;
+    --bg-bolt: #c4b5fd;
+    --bg-v0: #8b5cf6;
+    --bg-cursor: #847aba;
+    --bg-codex: #5d5a5f;
+    --bg-supabase: rgb(50, 50, 168);
+    --bg-whimsical: rgb(44, 44, 121);
 }
 
 body {

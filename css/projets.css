@@ -148,6 +148,13 @@
 .express { background-color: var(--bg-express); }
 .pwa { background-color: var(--bg-pwa); }
 .tailwind { background-color : var(--bg-tailwind); }
+.lovable { background-color: var(--bg-lovable); }
+.bolt { background-color: var(--bg-bolt); }
+.v0 { background-color: var(--bg-v0); }
+.cursor { background-color: var(--bg-cursor); }
+.codex { background-color: var(--bg-codex); }
+.supabase { background-color: var(--bg-supabase); }
+.whimsical { background-color: var(--bg-whimsical); }
 
 .projet-stack {
     margin-top: auto;
